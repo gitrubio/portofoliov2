@@ -1,3 +1,9 @@
+/**
+ * 
+ * @param {string} direction 
+ * @param {double} delay 
+ * @returns 
+ */
 export const fadeIn = (direction, delay) => {
   return {
     hidden: {
