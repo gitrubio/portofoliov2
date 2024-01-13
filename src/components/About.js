@@ -35,13 +35,10 @@ const About = () => {
               experience.{" "}
             </h3>
             <p className="mb-6">
-              Labore excepteur aliqua minim ut veniam minim. Excepteur pariatur
-              culpa fugiat enim ullamco eiusmod aliqua laborum nostrud
-              incididunt exercitation nostrud tempor. Nostrud nisi consectetur
-              voluptate eu dolore ex magna excepteur ad est irure fugiat.
-              Deserunt labore in voluptate nostrud amet sunt aliquip sint esse
-              ullamco exercitation dolore nulla minim. Nulla sunt sunt ex nulla
-              minim.
+            I'm a Full Stack web developer with skills in Java, JavaScript, TypeScript, React, Node,
+            Laravel, Nest, databases, and sales management systems. I excel at working
+            effectively in collaborative teams and staying updated with the latest industry trends.
+            I'm committed to problem-solving and creating effective solutions for our clients.
             </p>
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>

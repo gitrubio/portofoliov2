@@ -84,16 +84,13 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="#">
-                <FaFacebookF />
-              </a>
-              <a href="#">
+              <a href="https://www.instagram.com/itscarlos_rubio1/" target='_blank'>
                 <FaInstagram />
               </a>
-              <a href="#">
+              <a href='https://github.com/gitrubio' target='_blank'>
                 <FaGithub />
               </a>
-              <a href="#">
+              <a 	href='https://www.linkedin.com/in/carlos-rubio-viloria-27b328237/' target='_blank'>
                 <FaLinkedinIn />
               </a>
             </motion.div>
