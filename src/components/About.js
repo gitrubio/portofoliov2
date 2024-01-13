@@ -7,6 +7,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 //variants
 import { fadeIn } from "../variants";
+import { downloadCV } from "../api/firebase";
 
 const About = () => {
   const { ref, inView } = useInView({
@@ -31,7 +32,7 @@ const About = () => {
           className="flex-1">
             <h2 className="h2 text-accent">About me.</h2>
             <h3 className="h3   mb-4">
-              I'm a Freelance Full-stack Developer with over 2 years of
+              I'm a Freelance Full-stack Developer with over 3 years of
               experience.{" "}
             </h3>
             <p className="mb-6">
@@ -70,9 +71,9 @@ const About = () => {
             </div>
             <div className="flex gap-x-8 items-center">
               <button className="btn btn-lg">Contact me</button>
-              <a href="#" className="text-gradient btn-link">
+              <button  className="text-gradient btn-link" onClick={downloadCV}>
                 My Portfolio
-              </a>
+              </button>
             </div>
           </motion.div>
         </div>

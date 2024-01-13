@@ -3,8 +3,7 @@ import React from "react";
 import Image from "../assets/avatar.svg";
 //icons
 import {
-  FaFacebookF,
-  FaTwitter,
+  FaWhatsapp,
   FaInstagram,
   FaLinkedinIn,
   FaGithub,
@@ -15,6 +14,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 //variants
 import { fadeIn } from "../variants";
+import { downloadCV } from "../api/firebase";
 const Banner = () => {
   return (
     <div id="home" className="min-h-[85vh] lg:min-h-[78vh] flex  items-center">
@@ -45,7 +45,7 @@ const Banner = () => {
                   2000,
                   "Designer",
                   2000,
-                  "Youtuber",
+                  "Freelancer",
                   2000,
                 ]}
                 speed={50}
@@ -61,9 +61,10 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
-              Labore ipsum fugiat in labore duis non dolore non aute consectetur
-              duis nostrud Lorem id. Elit reprehenderit ad nulla ullamco
-              pariatur consequat exercitation veniam occaecat.
+              Hello! I'm carlos, a systems engineer with 3 years of
+              experience in frontend and backend development. My balanced
+              approach creates intuitive interfaces and robust functionalities.
+              Explore my portfolio to see how I turn ideas into innovative code.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -72,10 +73,10 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <button className="btn btn-lg">Contact me</button>
-              <a className="text-gradient btn-link" href="x">
+              <a href="https://w.app/dxqFS9" target="_blank" className="btn btn-lg flex items-center">Contact me</a>
+              <button className="text-gradient btn-link" href="x" onClick={downloadCV}>
                 My Portfolio
-              </a>
+              </button>
             </motion.div>
             <motion.div
               variants={fadeIn("up", 0.7)}
@@ -84,13 +85,28 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
-              <a href="https://www.instagram.com/itscarlos_rubio1/" target='_blank'>
+              <a
+                rel="noreferrer"
+                href="https://www.instagram.com/itscarlos_rubio1/"
+                target="_blank"
+              >
                 <FaInstagram />
               </a>
-              <a href='https://github.com/gitrubio' target='_blank'>
+              <a href="https://github.com/gitrubio" target="_blank"  rel="noreferrer">
                 <FaGithub />
               </a>
-              <a 	href='https://www.linkedin.com/in/carlos-rubio-viloria-27b328237/' target='_blank'>
+              <a
+              href="https://w.app/dxqFS9"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaWhatsapp />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/carlos-rubio-viloria-27b328237/"
+                target="_blank"
+                
+              >
                 <FaLinkedinIn />
               </a>
             </motion.div>
