@@ -9,6 +9,7 @@ import {
   FaGithub,
 } from "react-icons/fa";
 //type animation
+// eslint-disable-next-line
 import { TypeAnimation } from "react-type-animation";
 //motion
 import { motion } from "framer-motion";
@@ -73,7 +74,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <a href="https://w.app/dxqFS9" target="_blank" className="btn btn-lg flex items-center">Contact me</a>
+              <a href="https://w.app/dxqFS9"  rel="noreferrer" target="_blank" className="btn btn-lg flex items-center">Contact me</a>
               <button className="text-gradient btn-link" href="x" onClick={downloadCV}>
                 My Portfolio
               </button>
@@ -105,7 +106,7 @@ const Banner = () => {
               <a
                 href="https://www.linkedin.com/in/carlos-rubio-viloria-27b328237/"
                 target="_blank"
-                
+                rel="noreferrer"
               >
                 <FaLinkedinIn />
               </a>

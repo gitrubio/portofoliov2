@@ -4,9 +4,14 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
 // img
-import Img1 from "../assets/portfolio-img1.png";
+import Img1 from "../assets/sputify.png";
 import Img2 from "../assets/portfolio-img2.png";
 import Img3 from "../assets/portfolio-img3.png";
+//icons
+import { SiTailwindcss, SiRedux  } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+
 
 const Work = () => {
   return (
@@ -26,14 +31,13 @@ const Work = () => {
                 My lastest <br /> Work.
               </h2>
               <p className="max-w-sm mb-4">
-                Ad adipisicing mollit tempor ullamco fugiat dolor occaecat. Est
-                voluptate commodo in in in dolore amet commodo aliquip.
-                Consequat est incididunt amet et proident reprehenderit
+              Welcome to the projects section, I've had the privilege of working on various projects that not only challenge my technical skills but also reflect my passion for creating innovative solutions. 
+             
               </p>
               <button className="btn btn-sm">View all projects</button>
             </div>
             {/**  image */}
-            <div className="group relative overflow-hidden border-2 border-white/50  rouderd-xl">
+            <div className="group relative overflow-hidden border-2 border-white/50  rouderd-xl rounded-2xl">
               {/**  overloy */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/**  image */}
@@ -59,25 +63,31 @@ const Work = () => {
             viewport={{ once: false, amount: 0.7 }}
             className="flex-1 flex  flex-col gap-y-6"
           >
-            <div className="group relative overflow-hidden border-2 border-white/50  rouderd-xl">
+            <a href="https://sputify.onrender.com/" target='_blank' rel="noreferrer"  className="group relative overflow-hidden border-2 border-white/50  rouderd-xl rounded-2xl">
               {/**  overloy */}
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300 "></div>
               {/**  image */}
               <img
-                className="group-hover:scale-125 transition-all duration-500"
+                className="group-hover:scale-125 transition-all duration-500 h-[315px] w-[600px] object-cover"
                 src={Img1}
                 alt=""
               />
               {/**  pretitle */}
               <div className="absolute  -bottom-full left-12 group-hover:bottom-24 transition-all duration-500  z-50">
-                <span className="text-gradient">UI/UX Desing</span>
+                <span className="text-gradient">App web</span>
               </div>
               {/**  title */}
               <div className="absolute  -bottom-full left-12 group-hover:bottom-14 transition-all duration-700  z-50">
-                <span className="text-3xl text-white">Project Title</span>
+                <span className="text-3xl text-white">Sputify</span>
               </div>
-            </div>
-            <div className="group relative overflow-hidden border-2 border-white/50  rouderd-xl">
+              <div className="absolute flex flex-row bottom-8  left-96 group-hover:-bottom-full transition-all duration-700  z-50">
+                <FaReact className="mr-3" size={30}/>
+                <SiTailwindcss className="mr-3" size={30}/>
+                <SiRedux className="mr-3" size={30}/>
+                <IoLogoJavascript className="mr-3" size={30}/>
+              </div>
+            </a>
+            <div className="group relative overflow-hidden border-2 border-white/50  rouderd-xl rounded-2xl">
               {/**  overloy */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/**  image */}

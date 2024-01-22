@@ -13,19 +13,19 @@ const services = [
   {
     name: "Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "I transform ideas into digital solutions, providing web and mobile development that combines creativity and functionality to achieve your goals.",
     icon: <RiCodeView />,
   },
   {
     name: "Server management",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "I optimize and oversee server environments, ensuring robust performance, solid security, and a scalable infrastructure that supports your operations.",
       icon: <FaServer/>,
   },
   {
     name: "Services Support ",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+      "I offer proactive and efficient technical assistance, ensuring that your systems operate seamlessly. My commitment is to provide quality technical support that keeps your business running",
       icon: <BiSupport/>,
   },
 ];
@@ -39,7 +39,7 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
+            className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten  lg:mb-0 h-[515px]"
           >
             <h2 className="h2 text-accent mb-6">What I Do.</h2>
             <h3 className="h3  max-w-[455px] mb-16">
