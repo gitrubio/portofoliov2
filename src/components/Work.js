@@ -6,9 +6,9 @@ import { fadeIn } from "../variants";
 // img
 import Img1 from "../assets/sputify.png";
 import Img2 from "../assets/portfolio-img2.png";
-import Img3 from "../assets/portfolio-img3.png";
+import Img3 from "../assets/modern.png";
 //icons
-import { SiTailwindcss, SiRedux  } from "react-icons/si";
+import { SiTailwindcss, SiRedux ,SiTypescript, SiFramer   } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 
@@ -48,11 +48,11 @@ const Work = () => {
               />
               {/**  pretitle */}
               <div className="absolute  -bottom-full left-12 group-hover:bottom-24 transition-all duration-500  z-50">
-                <span className="text-gradient">UI/UX Desing</span>
+                <span className="text-gradient">APP WEB</span>
               </div>
               {/**  title */}
               <div className="absolute  -bottom-full left-12 group-hover:bottom-14 transition-all duration-700  z-50">
-                <span className="text-3xl text-white">Project Title</span>
+                <span className="text-3xl text-white">In develop</span>
               </div>
             </div>
           </motion.div>
@@ -74,7 +74,7 @@ const Work = () => {
               />
               {/**  pretitle */}
               <div className="absolute  -bottom-full left-12 group-hover:bottom-24 transition-all duration-500  z-50">
-                <span className="text-gradient">App web</span>
+                <span className="text-gradient">APP WEB</span>
               </div>
               {/**  title */}
               <div className="absolute  -bottom-full left-12 group-hover:bottom-14 transition-all duration-700  z-50">
@@ -87,12 +87,12 @@ const Work = () => {
                 <IoLogoJavascript className="mr-3" size={30}/>
               </div>
             </a>
-            <div className="group relative overflow-hidden border-2 border-white/50  rouderd-xl rounded-2xl">
+            <a  href="https://hoobank-c2lj.onrender.com" target='_blank' rel="noreferrer"  className="group relative overflow-hidden border-2 border-white/50  rouderd-xl rounded-2xl">
               {/**  overloy */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               {/**  image */}
               <img
-                className="group-hover:scale-125 transition-all duration-500"
+                className="group-hover:scale-125 transition-all duration-500 h-[315px] w-[600px] object-cover"
                 src={Img3}
                 alt=""
               />
@@ -102,9 +102,15 @@ const Work = () => {
               </div>
               {/**  title */}
               <div className="absolute  -bottom-full left-12 group-hover:bottom-14 transition-all duration-700  z-50">
-                <span className="text-3xl text-white">Project Title</span>
+                <span className="text-3xl text-white">Modern landing page</span>
               </div>
-            </div>
+              <div className="absolute flex flex-row bottom-8  left-96 group-hover:-bottom-full transition-all duration-700  z-50">
+                <FaReact className="mr-3" size={30}/>
+                <SiTailwindcss className="mr-3" size={30}/>
+                <SiFramer  className="mr-3" size={30}/>
+                <SiTypescript className="mr-3" size={30}/>
+              </div>
+            </a>
           </motion.div>
         </div>
       </div>
