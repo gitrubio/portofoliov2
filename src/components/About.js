@@ -70,8 +70,8 @@ const About = () => {
               </div>
             </div>
             <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg">Contact me</button>
-              <button  className="text-gradient btn-link" onClick={downloadCV}>
+              <button aria-label="contact me" className="btn btn-lg">Contact me</button>
+              <button aria-label="portfolio"  className="text-gradient btn-link" onClick={downloadCV}>
                 My Portfolio
               </button>
             </div>

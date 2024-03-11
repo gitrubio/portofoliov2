@@ -1,6 +1,5 @@
 import React from "react";
 // images
-import Image from "../assets/principal.png";
 //icons
 import {
   FaWhatsapp,
@@ -17,6 +16,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { downloadCV } from "../api/firebase";
 const Banner = () => {
+  const Image = 'https://firebasestorage.googleapis.com/v0/b/e-comerce-f3c71.appspot.com/o/principal.webp?alt=media&token=1fc6988e-cb5e-4230-a77e-7310f4dc8f2b';
   return (
     <div id="home" className="min-h-[85vh] lg:min-h-[78vh] flex  items-center">
       <div className=" container mx-auto">
@@ -75,7 +75,7 @@ const Banner = () => {
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
               <a href="https://w.app/dxqFS9"  rel="noreferrer" target="_blank" className="btn btn-lg flex items-center">Contact me</a>
-              <button className="text-gradient btn-link" href="x" onClick={downloadCV}>
+              <button aria-label="my portfolio" className="text-gradient btn-link" href="x" onClick={downloadCV}>
                 My Portfolio
               </button>
             </motion.div>
@@ -87,16 +87,20 @@ const Banner = () => {
               className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
             >
               <a
+                aria-label="instagram"
                 rel="noreferrer"
                 href="https://www.instagram.com/itscarlos_rubio1/"
                 target="_blank"
               >
                 <FaInstagram />
               </a>
-              <a href="https://github.com/gitrubio" target="_blank"  rel="noreferrer">
+              <a 
+              aria-label="github"
+              href="https://github.com/gitrubio" target="_blank"  rel="noreferrer">
                 <FaGithub />
               </a>
               <a
+              aria-label="whatsapp"
               href="https://w.app/dxqFS9"
                 target="_blank"
                 rel="noreferrer"
@@ -104,6 +108,7 @@ const Banner = () => {
                 <FaWhatsapp />
               </a>
               <a
+              aria-label="linkedin"
                 href="https://www.linkedin.com/in/carlos-rubio-viloria-27b328237/"
                 target="_blank"
                 rel="noreferrer"
@@ -118,7 +123,7 @@ const Banner = () => {
             whileInView={"show"}
             className="hidden lg:flex flex-1 max-w-[320px]  lg:max-w-[482px]"
           >
-            <img src={Image} alt="" />
+            <img  rel="preload" loading="lazy" la src={Image} alt="" />
           </motion.div>
         </div>
       </div>

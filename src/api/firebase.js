@@ -19,11 +19,14 @@ const firebaseConfig = {
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-export const analytics = getAnalytics(app);
 export const storage = getStorage(app)
 
 export const downloadCV = async () => {
+   try {
     const storageRef = ref(storage, 'Carlos Rubio Curriculum.pdf');
     const url = await getDownloadURL(storageRef);
     window.open(url)
+   } catch (error) {
+    
+   }
 }

@@ -11,6 +11,8 @@ const Nav = () => {
       <div className="container mx-auto ">
         <div className="w-full bg-black/20 h-[96px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex justify-between items-center text-2xl text-white/50">
           <Link
+           href="/home"
+            aria-label="home"
             to="home"
             activeClass='active'
             smooth={true}
@@ -21,6 +23,8 @@ const Nav = () => {
             <BiHomeAlt />
           </Link>
           <Link
+          aria-label="about"
+           href="/about"
             to="about"
             activeClass='active'
             smooth={true}
@@ -30,6 +34,8 @@ const Nav = () => {
             <BiUser />
           </Link>
           <Link
+          aria-label="services"
+          href="/services"
             to="services"
             activeClass='active'
             smooth={true}
@@ -39,6 +45,8 @@ const Nav = () => {
             <BsClipboardData />
           </Link>
           <Link
+          aria-label="work"
+           href="/work"
             to="work"
             activeClass='active'
             smooth={true}
@@ -48,6 +56,8 @@ const Nav = () => {
             <BsBriefcase />
           </Link>
           <Link
+          aria-label="contact"
+           href="/contact"
             to="contact"
             activeClass='active'
             smooth={true}

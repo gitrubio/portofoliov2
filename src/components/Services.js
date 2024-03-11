@@ -46,7 +46,7 @@ const Services = () => {
               I'm a Freelance Full-stack Developer with over 3 years of
               experience..
             </h3>
-            <button className="btn btn-sm">See my work</button>
+            <button aria-label="work" className="btn btn-sm">See my work</button>
           </motion.div>
           <motion.div
             variants={fadeIn("left", 0.3)}
@@ -71,7 +71,7 @@ const Services = () => {
                   </div>
                   <div className="flex flex-col flex-1 items-end">
                     <button
-                    
+                    aria-label="service"
                       className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
                     >
                       {service.icon}

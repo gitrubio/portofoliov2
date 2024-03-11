@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
 // img
-import Img1 from "../assets/sputify.png";
-import Img2 from "../assets/portfolio-img2.png";
+import Img1 from "../assets/sputify.webp";
+import Img2 from "../assets/portfolio-img2.webp";
 import Img3 from "../assets/modern.png";
 //icons
 import { SiTailwindcss, SiRedux ,SiTypescript, SiFramer   } from "react-icons/si";
@@ -34,7 +34,7 @@ const Work = () => {
               Welcome to the projects section, I've had the privilege of working on various projects that not only challenge my technical skills but also reflect my passion for creating innovative solutions. 
              
               </p>
-              <button className="btn btn-sm">View all projects</button>
+              <button aria-label="projects" className="btn btn-sm">View all projects</button>
             </div>
             {/**  image */}
             <div className="group relative overflow-hidden border-2 border-white/50  rouderd-xl rounded-2xl">
