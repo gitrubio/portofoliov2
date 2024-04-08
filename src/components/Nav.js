@@ -5,7 +5,14 @@ import { BsClipboardData, BsBriefcase, BsChatSquareText } from "react-icons/bs";
 //links
 import { Link } from "react-scroll";
 
+//sound
+import useSound from 'use-sound';
+import soundEffect from '../assets/click.mp3';
+
 const Nav = () => {
+
+  const [play] = useSound(soundEffect, { volume: 0.5 });
+
   return (
     <div className="fixed bottom-2 lg:bottom-8 w-full overflow-hidden z-50">
       <div className="container mx-auto ">
@@ -18,6 +25,7 @@ const Nav = () => {
             smooth={true}
             spy={true}
             offset={-200}
+            onClick={play}
             className="cursor-pointer w-[60px]  h-[60px] flex items-center justify-center"
           >
             <BiHomeAlt />
@@ -29,6 +37,7 @@ const Nav = () => {
             activeClass='active'
             smooth={true}
             spy={true}
+            onClick={play}
             className="cursor-pointer w-[60px]  h-[60px] flex items-center justify-center"
           >
             <BiUser />
@@ -40,6 +49,7 @@ const Nav = () => {
             activeClass='active'
             smooth={true}
             spy={true}
+            onClick={play}
             className="cursor-pointer w-[60px]  h-[60px] flex items-center justify-center"
           >
             <BsClipboardData />
@@ -51,6 +61,7 @@ const Nav = () => {
             activeClass='active'
             smooth={true}
             spy={true}
+            onClick={play}
             className="cursor-pointer w-[60px]  h-[60px] flex items-center justify-center"
           >
             <BsBriefcase />
@@ -62,6 +73,7 @@ const Nav = () => {
             activeClass='active'
             smooth={true}
             spy={true}
+            onClick={play}
             className="cursor-pointer w-[60px]  h-[60px] flex items-center justify-center"
           >
             <BsChatSquareText />
