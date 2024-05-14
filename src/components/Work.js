@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 // img
 import Img1 from "../assets/sputify.webp";
-import Img2 from "../assets/portfolio-img2.webp";
+import Img2 from "../assets/ecomerce.png";
 import Img3 from "../assets/modern.png";
 //icons
 import { SiTailwindcss, SiRedux ,SiTypescript, SiFramer   } from "react-icons/si";
@@ -37,24 +37,30 @@ const Work = () => {
               <button aria-label="projects" className="btn btn-sm">View all projects</button>
             </div>
             {/**  image */}
-            <div className="group relative overflow-hidden border-2 border-white/50  rouderd-xl rounded-2xl">
+            <a href="https://ecomerce-k9rl.onrender.com" target='_blank' rel="noreferrer"  className="group relative overflow-hidden border-2 border-white/50  rouderd-xl rounded-2xl">
               {/**  overloy */}
-              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+              <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300 "></div>
               {/**  image */}
               <img
-                className="group-hover:scale-125 transition-all duration-500"
+                className="group-hover:scale-125 transition-all duration-500 h-[315px] w-[600px] object-cover"
                 src={Img2}
                 alt=""
               />
               {/**  pretitle */}
               <div className="absolute  -bottom-full left-12 group-hover:bottom-24 transition-all duration-500  z-50">
-                <span className="text-gradient">APP WEB</span>
+                <span className="text-gradient">e-comerce</span>
               </div>
               {/**  title */}
               <div className="absolute  -bottom-full left-12 group-hover:bottom-14 transition-all duration-700  z-50">
-                <span className="text-3xl text-white">In develop</span>
+                <span className="text-3xl text-white">Next-comerce</span>
               </div>
-            </div>
+              <div className="absolute flex flex-row bottom-8  left-96 group-hover:-bottom-full transition-all duration-700  z-50 text-black">
+                <FaReact className="mr-3" size={30}/>
+                <SiTailwindcss className="mr-3" size={30}/>
+                <SiRedux className="mr-3" size={30}/>
+                <IoLogoJavascript className="mr-3" size={30}/>
+              </div>
+            </a>
           </motion.div>
           <motion.div
             variants={fadeIn("left", 0.2)}
